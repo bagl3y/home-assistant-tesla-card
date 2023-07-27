@@ -1,5 +1,6 @@
 # Tesla Custom Card for Home Assistant
 
+A big THANKS to [Thierry.P](https://forum.hacf.fr/t/lintegration-tesla-et-automatisation/7572/95) that initiated a big part of this amazing work !
 ## Installation
 
 - Install https://github.com/custom-cards/bar-card with HACS
