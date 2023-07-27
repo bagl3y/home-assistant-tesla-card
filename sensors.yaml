@@ -1,0 +1,10 @@
+- platform: template
+  sensors:
+    tesla_tpms_rear_left_alert:
+      value_template: "{{ states('sensor.<TESLA_NAME>_tpms_rear_left') | float(0) < 2.6 }}"
+    tesla_tpms_rear_right_alert:
+      value_template: "{{ states('sensor.<TESLA_NAME>_tpms_rear_right') | float(0) < 2.6 }}"
+    tesla_tpms_front_left_alert:
+      value_template: "{{ states('sensor.<TESLA_NAME>_tpms_front_left') | float(0) < 2.6 }}"
+    tesla_tpms_front_right_alert:
+      value_template: "{{ states('sensor.<TESLA_NAME>_tpms_front_right') | float(0) < 2.6 }}"

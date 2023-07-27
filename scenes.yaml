@@ -1,0 +1,159 @@
+- id: '1685086068782' 
+  name: Activation_clim
+  entities:
+    climate.<TESLA_NAME>_hvac_climate_system:
+      hvac_modes:
+      - heat_cool
+      - 'off'
+      preset_modes:
+      - Normal
+      - Defrost
+      - Keep On
+      - Dog Mode
+      - Camp Mode
+      preset_mode: Normal
+      attribution: Data provided by Tesla
+      friendly_name: <TESLA_NAME> Hvac (climate) system
+      icon: mdi:air-filter
+      state: heat_cool
+  icon: mdi:air-filter
+  metadata: {}
+- id: '1685086068783'
+  name: Arret_clim
+  entities:
+    climate.<TESLA_NAME>_hvac_climate_system:
+      hvac_modes:
+      - heat_cool
+      - 'off'
+      preset_modes:
+      - Normal
+      - Defrost
+      - Keep On
+      - Dog Mode
+      - Camp Mode
+      attribution: Data provided by Tesla
+      friendly_name: <TESLA_NAME> Hvac (climate) system
+      icon: mdi:air-filter
+      state: 'off'
+  icon: mdi:air-filter
+  metadata: {}
+- id: '1685086183030'
+  name: Dog mode
+  entities:
+    climate.<TESLA_NAME>_hvac_climate_system:
+      hvac_modes:
+      - heat_cool
+      - 'off'
+      preset_modes:
+      - Normal
+      - Defrost
+      - Keep On
+      - Dog Mode
+      - Camp Mode
+      preset_mode: Dog Mode
+      attribution: Data provided by Tesla
+      friendly_name: <TESLA_NAME> Hvac (climate) system
+      icon: mdi:dog
+      state: heat_cool
+  icon: mdi:dog
+  metadata: {}
+- id: '1685135349320'
+  name: Mode_sentinelle_on
+  entities:
+    lock.<TESLA_NAME>_doors:
+      attribution: Data provided by Tesla
+      friendly_name: <TESLA_NAME> Doors
+      supported_features: 0
+      state: locked
+    lock.<TESLA_NAME>_charge_port_latch:
+      attribution: Data provided by Tesla
+      icon: mdi:ev-plug-tesla
+      friendly_name: <TESLA_NAME> Charge port latch
+      supported_features: 1
+      state: locked
+    cover.<TESLA_NAME>_frunk:
+      attribution: Data provided by Tesla
+      device_class: door
+      icon: mdi:car
+      friendly_name: <TESLA_NAME> Frunk
+      supported_features: 1
+      state: closed
+    cover.<TESLA_NAME>_trunk:
+      attribution: Data provided by Tesla
+      device_class: door
+      icon: mdi:car-back
+      friendly_name: <TESLA_NAME> Trunk
+      supported_features: 1
+      state: closed
+    cover.<TESLA_NAME>_windows:
+      attribution: Data provided by Tesla
+      device_class: awning
+      icon: mdi:car-door
+      friendly_name: <TESLA_NAME> Windows
+      supported_features: 3
+      state: closed
+    switch.<TESLA_NAME>_sentry_mode:
+      attribution: Data provided by Tesla
+      icon: mdi:shield-car
+      friendly_name: <TESLA_NAME> Sentry mode
+      state: 'on'
+    select.<TESLA_NAME>_heated_seat_left:
+      state: 'Off'
+    select.<TESLA_NAME>_heated_seat_right:
+      state: 'Off'
+    select.<TESLA_NAME>_heated_seat_rear_left:
+      state: 'Off'
+    select.<TESLA_NAME>_heated_seat_rear_center:
+      state: 'Off'
+    select.<TESLA_NAME>_heated_seat_rear_right:
+      state: 'Off'
+  icon: mdi:circle-slice-8
+  metadata: {}
+- id: '1685135555279'
+  name: Mode_sentinelle_off
+  entities:
+    switch.<TESLA_NAME>_sentry_mode:
+      state: 'off'
+  icon: mdi:circle-slice-8
+  metadata: {}
+- id: '1685179411379'
+  name: Defrost mode
+  entities:
+    climate.<TESLA_NAME>_hvac_climate_system:
+      hvac_modes:
+      - heat_cool
+      - 'off'
+      preset_modes:
+      - Normal
+      - Defrost
+      - Keep On
+      - Dog Mode
+      - Camp Mode
+      preset_mode: Defrost
+      attribution: Data provided by Tesla
+      friendly_name: <TESLA_NAME> Hvac (climate) system
+      icon: mdi:car-defrost-front
+      state: heat_cool
+  icon: mdi:car-defrost-front
+  metadata: {}
+- id: '1685202049813'
+  name: Camp mode
+  entities:
+    climate.<TESLA_NAME>_hvac_climate_system:
+      hvac_modes:
+      - heat_cool
+      - 'off'
+      preset_modes:
+      - Normal
+      - Defrost
+      - Keep On
+      - Dog Mode
+      - Camp Mode
+      preset_mode: Camp Mode
+      attribution: Data provided by Tesla
+      icon: mdi:tent
+      friendly_name: <TESLA_NAME> Hvac (climate) system
+      supported_features: 17
+      state: none
+  icon: mdi:tent
+  metadata: {}
