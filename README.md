@@ -16,9 +16,9 @@ There is no real configuration, just replace `<TESLA_NAME>` with the name of you
 
 ## Features
 
-- Open/Close Trunk with a short press.
-- Open/Close Frunk with a long press.
-- Open/Close Charge Port with a short press.
+- Open/Close Trunk
+- Open/Close Frunk (with a long press)
+- Open/Close Charge
 - Activate AC
 - Activate Pet Mode
 - Activate camp mode
