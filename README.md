@@ -2,7 +2,7 @@
 
 ## A big THANK YOU to [Thierry.P](https://forum.hacf.fr/t/lintegration-tesla-et-automatisation/7572/95) who initiated a significant part of this amazing work!
 
-<a href="https://ibb.co/61hX1ss"><img src="https://i.ibb.co/b2hb2dd/Capture-d-cran-2023-07-28-132349.png" alt="Capture-d-cran-2023-07-28-132349" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/b2hb2dd/Capture-d-cran-2023-07-28-132349.png" alt="Capture-d-cran-2023-07-28-132349" border="0" /></a>
 
 - Install https://github.com/custom-cards/bar-card with HACS.
 - Replace all occurrences of `<TESLA_NAME>` with the name of YOUR car.
