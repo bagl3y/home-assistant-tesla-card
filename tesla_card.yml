@@ -6,7 +6,7 @@ elements:
     style:
       top: 2%
       left: 10%
-      color: '#039be5'
+      color: "#039be5"
     tap_action:
       action: call-service
       service: button.press
@@ -18,7 +18,7 @@ elements:
   - type: conditional
     conditions:
       - entity: update.<TESLA_NAME>_software_update
-        state_not: 'on'
+        state_not: "on"
     elements:
       - type: icon
         icon: mdi:upload-off
@@ -32,7 +32,7 @@ elements:
   - type: conditional
     conditions:
       - entity: update.<TESLA_NAME>_software_update
-        state: 'on'
+        state: "on"
     elements:
       - type: icon
         icon: mdi:upload
@@ -42,11 +42,11 @@ elements:
         style:
           top: 2%
           left: 64%
-          color: '#039be5'
+          color: "#039be5"
   - type: conditional
     conditions:
       - entity: binary_sensor.<TESLA_NAME>_online
-        state: 'on'
+        state: "on"
     elements:
       - type: icon
         icon: mdi:check-network
@@ -60,7 +60,7 @@ elements:
   - type: conditional
     conditions:
       - entity: binary_sensor.<TESLA_NAME>_online
-        state_not: 'on'
+        state_not: "on"
     elements:
       - type: icon
         icon: mdi:network-off-outline
@@ -74,7 +74,7 @@ elements:
   - type: conditional
     conditions:
       - entity: switch.<TESLA_NAME>_sentry_mode
-        state: 'off'
+        state: "off"
     elements:
       - type: icon
         icon: mdi:circle-slice-8
@@ -92,7 +92,7 @@ elements:
   - type: conditional
     conditions:
       - entity: switch.<TESLA_NAME>_sentry_mode
-        state: 'on'
+        state: "on"
     elements:
       - type: icon
         icon: mdi:circle-slice-8
@@ -142,11 +142,11 @@ elements:
         style:
           top: 2%
           left: 70.5%
-          color: '#039be5'
+          color: "#039be5"
   - type: conditional
     conditions:
       - entity: climate.<TESLA_NAME>_hvac_climate_system
-        state: 'off'
+        state: "off"
     elements:
       - type: icon
         icon: mdi:fan-off
@@ -178,7 +178,7 @@ elements:
         style:
           top: 2%
           left: 96%
-          color: '#039be5'
+          color: "#039be5"
   - type: conditional
     conditions:
       - entity: climate.<TESLA_NAME>_hvac_climate_system
@@ -299,7 +299,7 @@ elements:
   - type: conditional
     conditions:
       - entity: select.<TESLA_NAME>_heated_seat_left
-        state: 'Off'
+        state: "Off"
     elements:
       - type: icon
         icon: mdi:heat-wave
@@ -313,7 +313,7 @@ elements:
   - type: conditional
     conditions:
       - entity: select.<TESLA_NAME>_heated_seat_left
-        state_not: 'Off'
+        state_not: "Off"
     elements:
       - type: icon
         icon: mdi:heat-wave
@@ -327,7 +327,7 @@ elements:
   - type: conditional
     conditions:
       - entity: select.<TESLA_NAME>_heated_seat_right
-        state: 'Off'
+        state: "Off"
     elements:
       - type: icon
         icon: mdi:heat-wave
@@ -341,7 +341,7 @@ elements:
   - type: conditional
     conditions:
       - entity: select.<TESLA_NAME>_heated_seat_right
-        state_not: 'Off'
+        state_not: "Off"
     elements:
       - type: icon
         icon: mdi:heat-wave
@@ -355,7 +355,7 @@ elements:
   - type: conditional
     conditions:
       - entity: select.<TESLA_NAME>_heated_seat_rear_left
-        state: 'Off'
+        state: "Off"
     elements:
       - type: icon
         icon: mdi:heat-wave
@@ -369,7 +369,7 @@ elements:
   - type: conditional
     conditions:
       - entity: select.<TESLA_NAME>_heated_seat_rear_left
-        state_not: 'Off'
+        state_not: "Off"
     elements:
       - type: icon
         icon: mdi:heat-wave
@@ -383,7 +383,7 @@ elements:
   - type: conditional
     conditions:
       - entity: select.<TESLA_NAME>_heated_seat_rear_center
-        state: 'Off'
+        state: "Off"
     elements:
       - type: icon
         icon: mdi:heat-wave
@@ -397,7 +397,7 @@ elements:
   - type: conditional
     conditions:
       - entity: select.<TESLA_NAME>_heated_seat_rear_center
-        state_not: 'Off'
+        state_not: "Off"
     elements:
       - type: icon
         icon: mdi:heat-wave
@@ -411,7 +411,7 @@ elements:
   - type: conditional
     conditions:
       - entity: select.<TESLA_NAME>_heated_seat_rear_right
-        state: 'Off'
+        state: "Off"
     elements:
       - type: icon
         icon: mdi:heat-wave
@@ -425,7 +425,7 @@ elements:
   - type: conditional
     conditions:
       - entity: select.<TESLA_NAME>_heated_seat_rear_right
-        state_not: 'Off'
+        state_not: "Off"
     elements:
       - type: icon
         icon: mdi:heat-wave
@@ -439,7 +439,7 @@ elements:
   - type: conditional
     conditions:
       - entity: sensor.tesla_tpms_front_left_alert
-        state: 'False'
+        state: "False"
     elements:
       - type: icon
         icon: mdi:tire
@@ -453,7 +453,7 @@ elements:
   - type: conditional
     conditions:
       - entity: sensor.tesla_tpms_front_left_alert
-        state_not: 'False'
+        state_not: "False"
     elements:
       - type: icon
         icon: mdi:car-tire-alert
@@ -478,7 +478,7 @@ elements:
   - type: conditional
     conditions:
       - entity: sensor.tesla_tpms_front_right_alert
-        state: 'False'
+        state: "False"
     elements:
       - type: icon
         icon: mdi:tire
@@ -492,7 +492,7 @@ elements:
   - type: conditional
     conditions:
       - entity: sensor.tesla_tpms_front_right_alert
-        state_not: 'False'
+        state_not: "False"
     elements:
       - type: icon
         icon: mdi:car-tire-alert
@@ -517,7 +517,7 @@ elements:
   - type: conditional
     conditions:
       - entity: sensor.tesla_tpms_rear_right_alert
-        state: 'False'
+        state: "False"
     elements:
       - type: icon
         icon: mdi:tire
@@ -531,7 +531,7 @@ elements:
   - type: conditional
     conditions:
       - entity: sensor.tesla_tpms_rear_right_alert
-        state_not: 'False'
+        state_not: "False"
     elements:
       - type: icon
         icon: mdi:car-tire-alert
@@ -556,7 +556,7 @@ elements:
   - type: conditional
     conditions:
       - entity: sensor.tesla_tpms_rear_left_alert
-        state: 'False'
+        state: "False"
     elements:
       - type: icon
         icon: mdi:tire
@@ -570,7 +570,7 @@ elements:
   - type: conditional
     conditions:
       - entity: sensor.tesla_tpms_rear_left_alert
-        state_not: 'False'
+        state_not: "False"
     elements:
       - type: icon
         icon: mdi:car-tire-alert
@@ -642,6 +642,40 @@ elements:
       top: 15%
       left: 50%
       color: white
+  - type: conditional
+    conditions:
+      - entity: cover.<TESLA_NAME>_frunk
+        state: closed
+    elements:
+      - type: icon
+        icon: mdi:lock
+        entity: cover.<TESLA_NAME>_frunk
+        tap_action: none
+        double_tap_action: none
+        hold_action:
+          action: toggle
+        style:
+          top: 11%
+          left: 48%
+          color: white
+          transform: scale(0.8,0.8)
+  - type: conditional
+    conditions:
+      - entity: cover.<TESLA_NAME>_frunk
+        state_not: closed
+    elements:
+      - type: icon
+        icon: mdi:lock-open-variant
+        entity: cover.<TESLA_NAME>_frunk
+        tap_action: none
+        double_tap_action: none
+        hold_action:
+          action: toggle
+        style:
+          top: 11%
+          left: 48%
+          color: "#039be5"
+          transform: scale(0.8,0.8)
   - type: state-label
     entity: cover.<TESLA_NAME>_trunk
     tap_action:
@@ -654,18 +688,54 @@ elements:
       color: white
   - type: conditional
     conditions:
+      - entity: cover.<TESLA_NAME>_trunk
+        state: closed
+    elements:
+      - type: icon
+        icon: mdi:lock
+        entity: cover.<TESLA_NAME>_trunk
+        tap_action:
+          action: toggle
+        double_tap_action: none
+        hold_action: none
+        style:
+          top: 84%
+          left: 48%
+          color: white
+          transform: scale(0.8,0.8)
+  - type: conditional
+    conditions:
+      - entity: cover.<TESLA_NAME>_trunk
+        state_not: closed
+    elements:
+      - type: icon
+        icon: mdi:lock-open-variant
+        entity: cover.<TESLA_NAME>_trunk
+        tap_action:
+          action: toggle
+        double_tap_action: none
+        hold_action: none
+        style:
+          top: 84%
+          left: 48%
+          color: "#039be5"
+          transform: scale(0.8,0.8)
+  - type: conditional
+    conditions:
       - entity: cover.<TESLA_NAME>_charger_door
         state: open
     elements:
       - type: icon
         icon: mdi:ev-plug-tesla
-        tap_action: cover.<TESLA_NAME>_charger_door
+        entity: cover.<TESLA_NAME>_charger_door
+        tap_action:
+          action: toggle
         double_tap_action: none
         hold_action: none
         style:
-          top: 70%
-          left: 20%
-          color: '#039be5'
+          top: 85%
+          left: 23%
+          color: "#039be5"
   - type: conditional
     conditions:
       - entity: cover.<TESLA_NAME>_charger_door
@@ -673,7 +743,9 @@ elements:
     elements:
       - type: icon
         icon: mdi:ev-plug-tesla
-        tap_action: none
+        entity: cover.<TESLA_NAME>_charger_door
+        tap_action:
+          action: toggle
         double_tap_action: none
         hold_action: none
         style:
@@ -686,7 +758,7 @@ elements:
     double_tap_action: none
     hold_action: none
     style:
-      top: 87%
+      top: 88%
       left: 23%
       font-size: 75%
       font-weight: normal
@@ -738,7 +810,7 @@ elements:
   - type: conditional
     conditions:
       - entity: binary_sensor.<TESLA_NAME>_charging
-        state: 'on'
+        state: "on"
       - entity: device_tracker.<TESLA_NAME>_location_tracker
         state: home
     elements:
@@ -754,7 +826,7 @@ elements:
   - type: conditional
     conditions:
       - entity: binary_sensor.<TESLA_NAME>_charging
-        state: 'on'
+        state: "on"
       - entity: device_tracker.<TESLA_NAME>_location_tracker
         state: not_home
     elements:
@@ -781,11 +853,11 @@ elements:
         to: 100
     entity_row: true
     positions:
-      icon: 'off'
-      name: 'off'
-      indicator: 'off'
+      icon: "off"
+      name: "off"
+      indicator: "off"
     animation:
-      state: 'on'
+      state: "on"
       speed: 5
     width: 250px
     height: 25px
@@ -801,7 +873,7 @@ elements:
   - type: conditional
     conditions:
       - entity: binary_sensor.<TESLA_NAME>_charger
-        state: 'off'
+        state: "off"
     elements:
       - type: state-label
         entity: sensor.<TESLA_NAME>_charging_rate
