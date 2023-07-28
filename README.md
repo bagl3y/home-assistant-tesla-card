@@ -19,6 +19,11 @@ There is no real configuration, just replace `<TESLA_NAME>` with the name of you
 - Open/Close Trunk with a short press.
 - Open/Close Frunk with a long press.
 - Open/Close Charge Port with a short press.
+- Activate AC
+- Activate Pet Mode
+- Activate camp mode
+- Activate defrost
+- Turn on/off Heated Seats
 
 ### To Do
 
